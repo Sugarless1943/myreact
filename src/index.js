@@ -9,8 +9,13 @@ const element = MyReact.createElement(
   {
     title: "halo",
   },
-  'wtf',
-  MyReact.createElement('a', null, '我是a标签')
+  "wtf",
+  MyReact.createElement(
+    "div",
+    null,
+    MyReact.createElement("a", null, "a标签"),
+    MyReact.createElement("h1", null, "哈哈哈哈哈")
+  )
 );
 
 const container = document.getElementById("root");
