@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import MyReact from "./MyReact";
 
-const element = React.createElement(
-  'div',
+console.log(MyReact);
+
+const element = MyReact.createElement(
+  "div",
   {
-    title: 'halo',
+    title: "halo",
   },
-  'wtf'
-)
+  "wtf"
+);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(element);
+const container = document.getElementById("root");
+MyReact.render(element, container);
