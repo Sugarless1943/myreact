@@ -2,14 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import MyReact from "./MyReact";
 
-console.log(MyReact);
-
 const element = MyReact.createElement(
   "div",
   {
     title: "halo",
   },
-  "wtf"
+  "wtf",
+  MyReact.createElement(
+    "div",
+    null,
+    MyReact.createElement("a", null, "a标签"),
+    MyReact.createElement("h1", null, "哈哈哈哈哈")
+  )
 );
 
 const container = document.getElementById("root");
